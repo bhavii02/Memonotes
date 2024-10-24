@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", "sans-serif";
+  }
+
+  body {
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  .light-theme {
+    background-image: url('/src/assets/images/whatsapp.png');
+  }
+
+  .dark-theme {
+    background-image: url('/src/assets/images/darktheme.png');
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-primary text-white p-2 rounded my-1 hover:bg-blue-600;
+  }
+
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer hover:text-primary;
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+
+  .due-date-icon-box {
+    @apply flex items-center justify-center w-6 h-6 bg-slate-200 border border-slate-100;
+  }
+
+  .due-date-text {
+    @apply text-xs text-slate-600;
+  }
+
+  .due-date-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+}
+
+
+.dark-theme .navbar {
+  background-color: #333;
+}
+
+.light-theme .navbar {
+  background-color: #ece5dd;
+}
+
+.dark-theme .navbar h2 {
+  color: white;
+}
+
+.light-theme .navbar h2 {
+  color: black;
+}
+
+/* Profile Info Styles */
+.dark-theme .profile-info .initials {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme .profile-info .name {
+  color: white;
+}
+
+.dark-theme .profile-info .logout-btn {
+  color: white;
+}
+
+.light-theme .profile-info .initials {
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+.light-theme .profile-info .name {
+  color: black;
+}
+
+.light-theme .profile-info .logout-btn {
+  color: black;
+}
+
+/* NoteCard Styles */
+.light-theme .note-card {
+  background-color: #ffffff;
+  color: #f6efef;
+  border: 1px solid #dddddd;
+}
+
+.dark-theme .note-card {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+.note-card h6 {
+  color: #333333;
+}
+
+.dark-theme .note-card h6 {
+  color: #ffffff;
+}
+
+.note-card p {
+  color: #666666;
+}
+
+.dark-theme .note-card p {
+  color: #dddddd;
+}
+
+.note-card .icon-btn {
+  color: #666666;
+}
+
+.dark-theme .note-card .icon-btn {
+  color: #bbbbbb;
+}
+
+.note-card .icon-btn:hover {
+  color: #000000;
+}
+
+.dark-theme .note-card .icon-btn:hover {
+  color: #ffffff;
+}
+
+.note-card .dropdown-menu {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #dddddd;
+}
+
+.dark-theme .note-card .dropdown-menu {
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.note-card .dropdown-menu button {
+  color: #333333;
+}
+
+.dark-theme .note-card .dropdown-menu button {
+  color: #ffffff;
+}
+
+.note-card .dropdown-menu button:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.dark-theme .note-card .dropdown-menu button:hover {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+.note-card .tooltip {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #dddddd;
+}
+
+.dark-theme .note-card .tooltip {
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+.tooltip p {
+  color: #333333;
+}
+
+.dark-theme .tooltip p {
+  color: #ffffff;
+}
+
+.pin-blue {
+  fill: blue;
+}
+
+
+.icon-btn {
+  @apply text-xl cursor-pointer;
+}
+.text-slate-300 { color: #d1d5db; }
+.text-red-500 { color: #ef4444; }
+.text-orange-500 { color: #f97316; }
+.text-blue-500 { color: #3b82f6; }
